@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Tela Login</title>
+</head>
+<body>
+    <form action="{% url 'logar' %}" method="POST">
+        {% csrf_token %}
+        <input type="text" placeholder="Usuário" name="nome"><br>
+        <input type="password" placeholder="Senha" name="senha"><br>
+        <input type="submit" value="Login">
+
+    </form>
+</body>
+</html>
